@@ -98,7 +98,7 @@ span.item__discount--move{
 } */
 
 /* <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Boolando v.2 with display none<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
-/* * {
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -196,10 +196,10 @@ span.item__discount--move{
 
 .info__price--gray {
 	text-decoration: line-through;
-} */
+}
 
 /* <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Boolando v.3 with background<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
-
+/* 
 * {
 	padding: 0;
 	margin: 0;
@@ -322,4 +322,4 @@ span.item__discount--move{
 
 .info__price--gray {
 	text-decoration: line-through;
-} 
+}  */
