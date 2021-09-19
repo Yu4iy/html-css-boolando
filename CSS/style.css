@@ -1,4 +1,6 @@
-/* GENERAL STYLE */
+/* <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Boolando v.1 without display none<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
+
+/* 
 * {
 	padding: 0;
 	margin: 0;
@@ -7,10 +9,9 @@
 }
 
 .container {
-	/* width: 1480px; */
 	width: 96%;
 	margin: 30px auto;
-}
+}	
 
 .item__discount {
 	text-align: center;
@@ -28,7 +29,6 @@ span.item__discount--move{
 	left: 0;
 }
 
-/* SHOP ITEM */
 .item {
 	display: inline-block;
 	width: 31.33333% ;
@@ -44,7 +44,6 @@ span.item__discount--move{
 	position: relative;
 	z-index: 1;
 
-/* HOVER */
 }
 .item__img-hover {
 	position: absolute;
@@ -56,7 +55,6 @@ span.item__discount--move{
 	opacity: 0;
 	transition: linear 0.3s;
 }
-/* HEART */
 .item__heart {
 	position: absolute;
 	background: #fff;
@@ -74,7 +72,6 @@ span.item__discount--move{
 	cursor: pointer;
 	color: red;
 }
-/* DISCOUNT */
 .item__discount--red {
 	background-color: #eb0037;
 	left: 0;	
@@ -86,13 +83,113 @@ span.item__discount--move{
 	margin-left: 4px;
 }
 
-/* INFO */
 .info__title {
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 .info__price--red {
+	color: #ff0000;
+	font-weight: 700;
+}
+
+.info__price--gray {
+	text-decoration: line-through;
+} */
+
+/* <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Boolando v.2 with display none<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --> */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 96%;
+	margin: 30px auto;
+}
+
+.shop__list {
+	display: inline-block;
+	width: calc(100%/3);
+	margin: 0 -4px 0 0 ;
+	position: relative;
+}
+.shop__img {
+	width: 100%;
+	padding: 20px;
+	display: block;
+}
+.shop__img--hover {
+	display: none;
+	width: 100%;
+	padding: 20px;
+}
+
+.shop__list:hover .shop__img {
+	display: none;
+}
+.shop__list:hover .shop__img--hover {
+	display: block;
+}
+.shop__adds-top {
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	top: 40px;
+	right: 20px;
+	font-size: 25px;
+}
+
+.shop__adds-top:hover .heart {
+	color: red;
+	font-size: 30px;
+	transition: linear 0.1s;	
+	cursor: pointer;
+}
+.shop__adds-boottom {
+	position: absolute;
+	bottom: 150px;
+	left: 20px;
+}
+.shop__discount {
+	background-color: red;
+	padding: 4px 8px;
+	margin-right: 5px;
+	color: #fff;
+	font-weight: 700;
+}
+.shop__sostb-ta {
+	background-color: seagreen;
+	padding: 4px 8px;
+	color: #fff;
+	font-weight: 700;
+}
+.shop__discount:hover {
+	text-decoration: underline;
+}
+.shop__sostb-ta:hover {
+	text-decoration: underline;
+}
+
+
+
+.info{
+	padding:0 20px;
+	margin:0 0 50px 0;
+
+}
+.info__title {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+.info__price--red{
 	color: #ff0000;
 	font-weight: 700;
 }
